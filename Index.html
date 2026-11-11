@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Offline Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0000ff">
+</head>
+<body>
+
+    <h1>Welcome to My Website!</h1>
+    <p>This website works without internet.</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <script src="script.js"></script>
+    <script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./service-worker.js")
+            .then(() => console.log("Service Worker Registered!"))
+            .catch(error => console.log("Service Worker Error:", error));
+    }
+</script>
+</body>
+</html>
