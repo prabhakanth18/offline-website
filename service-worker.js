@@ -1,4 +1,4 @@
-const CACHE_NAME = "my-website-v2";
+const CACHE_NAME = "my-website-v3";
 
 const FILES_TO_CACHE = [
     "./",
