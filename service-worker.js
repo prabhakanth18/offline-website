@@ -6,6 +6,8 @@ const FILES_TO_CACHE = [
     "./style.css",
     "./script.js",
     "./manifest.json"
+    "./icon-192.png",
+    "./icon-512.png"
 ];
 
 // Install and save website files
